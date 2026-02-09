@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('ain4.webp') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #fff;
+    }
+    header {
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p.description {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #ddd;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .service-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .service-card h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Services</h1>
+    <p class="description"></p>
+  </header>
+
+  <section class="services">
+    <div class="service-card">
+      <img src="ain.png" alt="AI Content Generator" />
+      <h3>AI Content Generator</h3>
+      <p>Automatically create blog posts, social media captions, email campaigns, and ad copies tailored to your brand.</p>
+    </div>
+    <div class="service-card">
+      <img src="ain1.webp" alt="AI Chatbot" />
+      <h3>AI Chatbot for Customer Support</h3>
+      <p>Offer 24/7 intelligent assistance to website visitors through a conversational chatbot.</p>
+    </div>
+    <div class="service-card">
+      <img src="ain2.jpg" alt="AI Content Scheduler" />
+      <h3>AI Content Scheduler</h3>
+      <p>Plan, generate, and post content automatically across platforms based on engagement analytics.</p>
+    </div>
+    <div class="service-card">
+      <img src="ain3.jpeg" alt="AI Image Creator" />
+      <h3>AI Image & Video Creator</h3>
+      <p>Design visuals and short videos with minimal input using AI tools.</p>
+    </div>
+    <div class="service-card">
+      <img src="ain4.webp" alt="AI Ad Optimization" />
+      <h3>AI Ad Optimization</h3>
+      <p>Maximize ad performance with intelligent audience targeting and real-time A/B testing.</p>
+    </div>
+    <div class="service-card">
+      <img src="ain2.jpg" alt="AI Data Analytics" />
+      <h3>AI Data Analytics Dashboard</h3>
+      <p>Visualize customer behavior, campaign performance, and sales trends using AI-driven insights.</p>
+    </div>
+  </section>
+</body>
+</html>
